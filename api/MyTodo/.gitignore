@@ -116,3 +116,8 @@ _PublishedWebsites/
 *.vso
 *.vspscc
 *.local
+
+TodoDatabase.db
+
+.env
+
