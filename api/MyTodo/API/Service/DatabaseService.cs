@@ -1,7 +1,4 @@
-// generate database service for mytodo with LiteDB
-using System;
 using LiteDB;
-using Microsoft.Extensions.Options;
 using MyTodo.API.Service;
 
 public class LiteDbOptions
@@ -10,10 +7,10 @@ public class LiteDbOptions
 }
 
 
-public class DatabaseService: IDatabaseService, IDisposable
+public class DatabaseService : IDatabaseService, IDisposable
 {
     private readonly ILiteDatabase _database;
-    
+
 
     public DatabaseService(ILiteDatabase database)
     {
@@ -29,7 +26,5 @@ public class DatabaseService: IDatabaseService, IDisposable
     {
         _database?.Dispose();
     }
-
-
 }
 

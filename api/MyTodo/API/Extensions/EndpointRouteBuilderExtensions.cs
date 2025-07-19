@@ -9,7 +9,7 @@ public static class EndpointRouteBuilderExtensions
             .WithOpenApi()
             .Produces(200)
             .ProducesProblem(500)
-            .WithTags(tags);
+            .WithTags(tags ?? "Health");
     }
     
 }

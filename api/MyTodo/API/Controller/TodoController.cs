@@ -1,8 +1,7 @@
-namespace MyTodo.API.Controller;
-
 using Microsoft.AspNetCore.Mvc;
-using MyTodo.API.Service;
 using MyTodo.Domain.Todo;
+
+namespace MyTodo.API.Controller;
 
 [ApiController]
 [Route("api/[controller]")] 

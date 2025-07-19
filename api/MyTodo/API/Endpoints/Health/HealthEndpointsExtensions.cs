@@ -1,8 +1,8 @@
-namespace MyTodo.API.Endpoints.Health;
 
 using MyTodo.API.Extensions;
 using MyTodo.Domain.Health;
 
+namespace MyTodo.API.Endpoints.Health;
 public static class HealthEndpointsExtensions
 {
     public static IEndpointRouteBuilder MapHealthEndpoints(this WebApplication app)
