@@ -117,7 +117,7 @@ _PublishedWebsites/
 *.vspscc
 *.local
 
-TodoDatabase.db
+*.db
 
 .env
 
