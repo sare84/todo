@@ -1,0 +1,118 @@
+# Visual Studio 2015/2017/2019/2022
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build Results
+[Dd]ebug/
+[Rr]elease/
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+build/
+Build/
+[Tt]emp/
+[Tt]mp/
+
+# Packages
+packages/
+*.nupkg
+*.snupkg
+*.dll
+*.exe
+*.pdb
+*.psmd1
+*.psmd1.sig
+
+# Rider
+.idea/
+
+# Visual Studio Code
+.vscode/
+
+# Project files
+*.csproj.user
+*.vcxproj.user
+*.sqlproj.user
+
+# Mac
+.DS_Store
+.localized
+
+# Linux
+*~
+.#*
+*.bak
+*.swp
+*.swo
+
+# Misc
+*.opendb
+*.log
+*.zip
+*.tar
+*.gz
+*.rar
+*.7z
+*.bak
+*.orig
+*.swp
+*.swo
+[Tt]humbs.db
+[Dd]esktop.ini
+
+# Dotnet Tool
+.dotnet_tools/
+
+# Test Results
+TestResults/
+*.trx
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Frontend build files (if applicable)
+dist/
+build/
+
+# NuGet
+*.nuget.log
+*.nupkg
+
+# Kestrel SSL certificates
+*.pfx
+
+# User Secrets
+appsettings.Development.json
+appsettings.Staging.json
+appsettings.Production.json
+appsettings.json.user
+secrets.json
+
+# Azure Functions
+local.settings.json
+
+# Azure WebJobs
+App_Data/jobs/continuous/
+
+# Serilog
+logs/
+
+# Azure DevOps artifacts
+_PublishedWebsites/
+
+# Git-related files
+.git/
+.gitattributes
+.gitmodules
+.gitkeep
+
+# Other commonly ignored files
+*.userprefs
+*.vso
+*.vspscc
+*.local
