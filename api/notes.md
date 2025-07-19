@@ -11,3 +11,5 @@ Notes:
 
 dotnet build | dotnet run
 
+dotnet add package DotNetEnv
+

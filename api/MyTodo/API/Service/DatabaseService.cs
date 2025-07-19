@@ -6,18 +6,18 @@ using MyTodo.API.Service;
 
 public class LiteDbOptions
 {
-    public string DatabaseFilePath { get; set; } = "Filename=MyDatabase.db; Connection=shared";
+    public string DatabaseFilePath { get; set; } = "";
 }
 
 
 public class DatabaseService: IDatabaseService, IDisposable
 {
     private readonly ILiteDatabase _database;
+    
 
-    public DatabaseService(IOptions<LiteDbOptions> options)
+    public DatabaseService(ILiteDatabase database)
     {
-        var dbPath = options?.Value?.DatabaseFilePath ?? "Filename=MyDatabase.db; Connection=shared";
-        _database = new LiteDatabase(dbPath);
+        _database = database ?? throw new ArgumentNullException(nameof(database));
     }
 
     public ILiteCollection<T> GetCollection<T>(string? collectionName = null) where T : class
